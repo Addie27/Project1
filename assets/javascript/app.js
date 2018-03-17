@@ -50,10 +50,9 @@
              .append(p.text(category[i].date))
              .append(p.text(category[i].url))
      }
-
-
  }
 
+ // On click events.
  $(document).on("click", "#science", display(scienceEvents));
  $(document).on("click", "#technology", display(technologyEvents));
  $(document).on("click", "#engineering", display(engineeringEvents));
