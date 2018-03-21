@@ -31,20 +31,18 @@ h1{
 .panel-body{
     position: fixed; 
     align-content: center;
-    top: 0; 
-    left: 0; 
     /* Preserve aspet ratio */
+    margin-left: 200px;
     min-width: 50%;
     min-height: 50%;
 }
 #pan{
     position: fixed; 
-align-content: center;
-top: 0; 
-left: 0; 
-/* Preserve aspet ratio */
-min-width: 50%;
-min-height: 50%;
+    align-content: center;
+    /* Preserve aspet ratio */
+    margin-left: 400px;
+    min-width: 50%;
+    min-height: 50%;
 
 }
 
