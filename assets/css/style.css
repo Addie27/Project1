@@ -10,7 +10,8 @@ margin-left: 300px;
 }
 
 .maincontainer{
-background-image: url("../images/background.jpg");
+
+background-image: url("../images/back-img.jpg");
 position: fixed; 
 align-content: center;
 background-repeat: no-repeat;
@@ -45,3 +46,7 @@ h1{
     min-height: 50%;
 
 }
+
+
+
+
