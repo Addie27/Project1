@@ -12,6 +12,7 @@ margin-left: 300px;
 .maincontainer{
 
 background-image: url("../images/back-img.jpg");
+font-family: 'Special Elite', cursive;
 position: fixed; 
 align-content: center;
 background-repeat: no-repeat;
@@ -26,6 +27,7 @@ min-height: 100%;
 
 h1{
     font-family: 'Fredericka the Great', cursive;
+    font-size: 65px;
     color: white !important;
 }
 
