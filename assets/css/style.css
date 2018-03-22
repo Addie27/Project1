@@ -23,7 +23,10 @@ left: 0;
 min-width: 100%;
 min-height: 100%;
 }
-  
+
+#navbar{
+    font-family: 'Special Elite', cursive;
+}
 
 h1{
     font-family: 'Fredericka the Great', cursive;
