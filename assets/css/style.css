@@ -9,8 +9,10 @@
     margin-left: 300px;
 }
 
+
 .maincontainer{
-    background-image: url("../images/background.jpg");
+    background-image: url("../images/back-img.jpg");
+    font-family: 'Special Elite', cursive;
     position: fixed; 
     align-content: center;
     background-repeat: no-repeat;
@@ -25,6 +27,7 @@
 
 h1{
     font-family: 'Fredericka the Great', cursive;
+    font-size: 65px;
     color: white !important;
 }
 
@@ -45,3 +48,7 @@ h1{
     min-height: 50%;
 
 }
+
+
+
+
