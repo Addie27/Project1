@@ -25,31 +25,35 @@
     min-height: 100%;
 }
 
-#navbar{
-    font-family: 'Special Elite', cursive;
+.subcontainer {
+    margin-top: 250px;
+    margin-left: 100px;
 }
 
+#navbar{
+    font-family: 'Special Elite', cursive;
+    background-color: black; opacity: 0.6 !important;
+}
+
+.list{
+    font: white !important;
+}
 h1{
     font-family: 'Fredericka the Great', cursive;
     font-size: 65px;
     color: black !important;
 }
 
-.panel-body{
-    position: fixed; 
-    align-content: center;
-    /* Preserve aspet ratio */
-    margin-left: 200px;
-    min-width: 50%;
-    min-height: 50%;
-}
+
+
+
 
 
 #pan{
     position: fixed; 
     align-content: center;
     /* Preserve aspet ratio */
-    margin-left: 400px;
+  
     min-width: 50%;
     min-height: 50%;
 
