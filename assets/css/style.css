@@ -1,16 +1,33 @@
-.jumbotron{
-    background-color: transparent;
-    position: fixed; 
-/* Preserve aspet ratio */
-    min-width: 100%;
+.jumbotron {
+    background: transparent; 
     min-height: 100%;
-    align-content: center;
-    margin-top: 200px;
-    margin-left: 300px;
-    margin-right: 0; 
+    min-width: 100%; 
+    padding-bottom: 100px; 
+    margin-left: 200px; 
+    padding-right: 150px !important; 
+    
 }
 
+.container{
+    position: fixed; 
+/* Preserve aspet ratio */
+    align-content: center;
+    margin-top: 200px;
+    width: 100%; 
+    padding-right: 100px; 
+    font-size: 15px !important;    
+}
 
+button {
+    font-family: 'Special Elite', cursive !important;
+    color: black !important;
+    background-color: white !important; 
+    border: 1px solid black !important;
+}
+
+.item {
+    font-family: 'Special Elite', cursive !important; 
+}
 .maincontainer{
     background-image: url("../images/back-img.jpg");
     opacity: 0.6;

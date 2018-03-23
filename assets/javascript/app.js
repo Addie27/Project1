@@ -54,6 +54,6 @@
 
  // On click events.
  $(document).on("click", "#science", display(scienceEvents));
- $(document).on("click", "#technology", display(technologyEvents));
+ $(document).on("click", "#technology", display(techEvents));
  $(document).on("click", "#engineering", display(engineeringEvents));
  $(document).on("click", "#math", display(mathEvents));
