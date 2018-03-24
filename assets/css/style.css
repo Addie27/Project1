@@ -60,13 +60,29 @@ h1{
 }
 
 #ytplayer {
-    margin-top: 50px;
+    width: 300px; 
+    height: 168px; 
+
 }
 
+.panel-title {
+    font-size: 30px !important;
+
+}
 .content-container {
     padding: 80px 40px;
     margin: 0 auto;
     max-width: 800px;
+}
+
+.youTubeImage {
+    float: left; 
+    margin: 5px; 
+}
+
+.youTubeTitle {
+    padding: 5px;
+    font-size: 20px; 
 }
 
 @media only screen and (min-width : 768px) {
