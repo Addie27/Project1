@@ -6,18 +6,53 @@ var tag = document.createElement('script');
 
       // 3. This function creates an <iframe> (and YouTube player)
       //    after the API code downloads.
-      var player;
+      var player1;
+      var player2; 
+      var player3;
+      var player4; 
+
       function onYouTubeIframeAPIReady() {
-        player = new YT.Player('player', {
-          height: '390',
-          width: '640',
-          videoId: 'M7lc1UVf-VE',
+        player1 = new YT.Player('player1', {
+          height: '168',
+          width: '300',
+          playerVars: { 'listType': 'search', 'list' : 'coding' },
           events: {
             'onReady': onPlayerReady,
             'onStateChange': onPlayerStateChange
           }
-        });
-      }
+        })
+
+        player2 = new YT.Player('player2', {
+          height: '168',
+          width: '300',
+          playerVars: { 'listType': 'search', 'list' : 'women in tech' },
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        })
+
+        player3 = new YT.Player('player3', {
+          height: '168',
+          width: '300',
+          playerVars: { 'listType': 'search', 'list' : 'scratch coding' },
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        })
+
+        player4= new YT.Player('player4', {
+          height: '168',
+          width: '300',
+          playerVars: { 'listType': 'search', 'list' : 'maker movement' },
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        })
+      };
+
 
       // 4. The API will call this function when the video player is ready.
       function onPlayerReady(event) {

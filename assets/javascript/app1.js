@@ -1,5 +1,6 @@
 
 var queryURL = "https://www.udacity.com/public-api/v0/courses";
+var courseInfo;
 
 $.ajax({
     url: queryURL,
@@ -12,12 +13,18 @@ $.ajax({
 
         for (var i = 0; i < results.length; i++) {
 
-            var courseDiv = $("<div class='course'>");
+            var courseDiv = $("<div class='item'>");
+            var courseInfo = $("<div><br>");
             var p = $("<p>");
 
-            courseDiv.append(p.text(results[i].title)); 
+            var title = results[i].title; 
+            var link = results[i].homepage;
+            var summary = results[i].summary;  
 
-            // courseDiv.append(p.text(results[i].title) + " " + p.text(results[i].homepage) + " " + p.text(results[i].summary) + " " + p.text(results[i].level) + " " + p.text(results[i].expected_duration) + " " + results[i].expected_duration_unit)
+            courseInfo
+                .append(p.text(title + " " + link + " " + summary))
+
+            courseDiv.append(courseInfo);
 
             $("#udacityCourses").prepend(courseDiv);
 
