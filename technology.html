@@ -64,15 +64,29 @@
     </div>
   </nav>
   <div class="maincontainer"></div>
-  <div class="jumbotron">
+ 
     <div class="panel panel-default" id="pan">
       <div class="panel-heading">
         <h3 class="panel-title">Panel title</h3>
-      </div>
+    
       <div class="panel-body">
-          <iframe id="ytplayer" type="text/html" width="640" height="360"
-          src="https://www.youtube.com/embed?listType=search&list=technology"
-          frameborder="0"></iframe>
+          <ul class="nav nav-tabs" role="tablist">
+              <li class="active"><a href="#home" role="tab" data-toggle="tab">Youtube</a></li>
+          <li><a href="#profile" role="tab" data-toggle="tab">Profile</a></li>
+              <li><a href="#messages" role="tab" data-toggle="tab">Messages</a></li>
+              <li><a href="#settings" role="tab" data-toggle="tab">Settings</a></li>
+            </ul>
+            
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div class="tab-pane active" id="home"><iframe id="ytplayer" type="text/html" width="640" height="360"
+                src="https://www.youtube.com/embed?listType=search&list=technology"
+                frameborder="0"></iframe></div>
+              <div class="tab-pane" id="profile">...</div>
+              <div class="tab-pane" id="messages">...</div>
+              <div class="tab-pane" id="settings">...</div>
+            </div>
+          
       </div>
     </div>
   </div>

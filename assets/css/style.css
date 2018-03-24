@@ -62,15 +62,26 @@ h1{
     color: black !important;
 }
 
+#ytplayer {
+    margin-top: 50px;
+}
+
 #pan{
     position: fixed; 
     align-content: center;
     /* Preserve aspet ratio */
-  
+    margin-top: 300px;
+    margin-left: 250px;
     min-width: 50%;
     min-height: 50%;
 
 }
+
+@media only screen and (min-width : 768px) {
+#pan
+
+}
+
 
 
 
