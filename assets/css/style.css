@@ -1,6 +1,7 @@
 #indexJumbotron {
     background-color: hsla(180, 4%, 15%, 0.8);
     min-height: 100%;
+    font-family: 'Poiret One', cursive;
     color: white;
     min-width: 100%; 
     padding-bottom: 100px;
@@ -31,7 +32,7 @@ button {
 .maincontainer{
     background-image: url("../images/back-img.jpg");
     opacity: 0.8;
-    font-family: 'Special Elite', cursive;
+    font-family: 'Special Elite', cursive !important;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
@@ -49,6 +50,9 @@ button {
     font-family: 'Special Elite', cursive;
     background-color: black; opacity: 0.6 !important;
 }
+
+
+
 
 .list{
     font: white !important;

@@ -16,6 +16,7 @@ $.ajax({
             var p = $("<p>");
 
             courseDiv.append(p.text(results[i].title))
+            console.log( courseDiv.append(p.text(results[i].title)))
             courseDiv.append(p.text(results[i].homepage))
             courseDiv.append(p.text(results[i].summary))
             courseDiv.append(p.text(results[i].level))
