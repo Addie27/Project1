@@ -52,18 +52,11 @@ button {
     color: white !important;
 }
 
-.navbutton:link {
+.navbutton:link, navbutton:active, .navbutton:visited, .panel-title {
     color: white !important; 
 }
 
-li:link, .panel-title {
-    color: white !important; 
-}
 
-li:visited, li:active {
-    color: gray !important;
-    text-decoration: none; 
-}
 
 h1{
     font-family: 'Fredericka the Great', cursive;
@@ -93,7 +86,7 @@ h1{
     
 }
 
-.course {
+.course, .thing-wrap {
     color: white; 
 }
 
@@ -112,7 +105,10 @@ iframe {
     font-size: 20px; 
 }
 
-@media only screen and (min-width : 768px) {
+@media only screen and (max-width : 768px) {
+    .panel {
+        margin-top: 160px; 
+    }
 
 }
 

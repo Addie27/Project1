@@ -1,38 +1,54 @@
 
 var queryURL = "https://www.udacity.com/public-api/v0/courses";
 var courseInfo;
+var array = [];
 
 $.ajax({
     url: queryURL,
     method: "GET"
 }).then(function (response) {
-    console.log(response); 
+    console.log(response);
+
     var results = response.courses;
-    console.log(results);
-    console.log(results[0].title); 
+    console.log(results[0].title);
+    console.log(results[1].title);
+    console.log(results[2].title);
 
-        for (var i = 0; i < results.length; i++) {
+    
+    var searchField = "title";
+    var searchVal = "programming";
+    for (var i = 0; i < results.length; i++) {
+        if (results[i][searchField] == searchVal) {
+            array.push(results[i]);
+            console.log(array); 
+        }
+    }
 
-            var courseDiv = $("<div class='course'>");
-            var courseInfo = $("<a target='_blank'><br>");
-            var p = $("<p>");
+    // for (var i = 0; i < results.length; i++) {
 
-            var title = results[i].title; 
-            var link = results[i].homepage;
-            var summary = results[i].summary; 
-          
-            courseInfo.attr({
-                "href": link,
-                });
+    //     var courseDiv = $("<div class='course'>");
+    //     var courseInfo = $("<a target='_blank'><br>");
+    //     var p = $("<p>");
 
-            courseInfo
-                .append(p.text("Title: " + title)); 
-                
+    //     var title = results[i].title;
+    //     var link = results[i].homepage;
+    //     var summary = results[i].summary;
 
-            courseDiv.append(courseInfo);
+    //     courseInfo.attr({
+    //         "href": link,
+    //     });
 
-            $("#udacityCourses").prepend(courseDiv);
+    //     courseInfo
+    //         .append(p.text("Title: " + title));
 
-        };//for loop close
+
+    //     courseDiv.append(courseInfo);
+
+    //     $("#udacityCourses").prepend(courseDiv);
+
+    // };//for loop close
+
 });//ajax call end
+
+
 

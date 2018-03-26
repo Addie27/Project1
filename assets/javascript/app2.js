@@ -44,7 +44,7 @@ var tag = document.createElement('script');
           }
         })
 
-        player4= new YT.Player('player4', {
+        player4 = new YT.Player('player4', {
           height: '168',
           width: '300',
           playerVars: { 'listType': 'search', 'list' : 'maker movement', 'autoplay' : 0 },
