@@ -48,15 +48,23 @@ button {
 
 #navbar{
     font-family: 'Special Elite', cursive;
-    background-color: black; opacity: 0.6 !important;
+    background-color: hsla(180, 4%, 15%, 0.8) !important;
+    color: white !important;
 }
 
-
-
-
-.list{
-    font: white !important;
+.navbutton:link {
+    color: white !important; 
 }
+
+li:link, .panel-title {
+    color: white !important; 
+}
+
+li:visited, li:active {
+    color: gray !important;
+    text-decoration: none; 
+}
+
 h1{
     font-family: 'Fredericka the Great', cursive;
     font-size: 65px;
@@ -73,10 +81,25 @@ h1{
     font-size: 30px !important;
 
 }
+
+.panel, .panel-default, .panel-heading {
+    background-color: hsla(180, 4%, 15%, 0.8) !important;
+}
+
 .content-container {
     padding: 80px 40px;
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 900px;
+    
+}
+
+.course {
+    color: white; 
+}
+
+iframe {
+    float: left; 
+    margin: 20px; 
 }
 
 .youTubeImage {
