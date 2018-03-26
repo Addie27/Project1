@@ -6,22 +6,59 @@ var tag = document.createElement('script');
 
       // 3. This function creates an <iframe> (and YouTube player)
       //    after the API code downloads.
-      var player;
+      var player1;
+      var player2; 
+      var player3;
+      var player4; 
+
       function onYouTubeIframeAPIReady() {
-        player = new YT.Player('player', {
-          height: '390',
-          width: '640',
-          videoId: 'M7lc1UVf-VE',
+      
+        player1 = new YT.Player('player1', {
+          height: '168',
+          width: '300',
+          playerVars: { 'listType': 'search', 'list' : 'coding', 'autoplay' : 0 },
           events: {
             'onReady': onPlayerReady,
             'onStateChange': onPlayerStateChange
           }
-        });
-      }
+        })
+        
 
+        player2 = new YT.Player('player2', {
+          height: '168',
+          width: '300',
+          playerVars: { 'listType': 'search', 'list' : 'women in tech', 'autoplay' : 0 },
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        })
+
+        player3 = new YT.Player('player3', {
+          height: '168',
+          width: '300',
+          playerVars: { 'listType': 'search', 'list' : 'scratch coding', 'autoplay' : 0 },
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        })
+
+        player4 = new YT.Player('player4', {
+          height: '168',
+          width: '300',
+          playerVars: { 'listType': 'search', 'list' : 'maker movement', 'autoplay' : 0 },
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        })
+      };
+
+    
       // 4. The API will call this function when the video player is ready.
       function onPlayerReady(event) {
-        event.target.playVideo();
+        event.target.stopVideo();
       }
 
       // 5. The API calls this function when the player's state changes.
@@ -30,7 +67,7 @@ var tag = document.createElement('script');
       var done = false;
       function onPlayerStateChange(event) {
         if (event.data == YT.PlayerState.PLAYING && !done) {
-          setTimeout(stopVideo, 6000);
+          setTimeout(stopVideo, 1000);
           done = true;
         }
       }

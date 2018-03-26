@@ -1,30 +1,54 @@
 
 var queryURL = "https://www.udacity.com/public-api/v0/courses";
+var courseInfo;
+var array = [];
 
 $.ajax({
     url: queryURL,
     method: "GET"
 }).then(function (response) {
-    console.log(response); 
+    console.log(response);
+
     var results = response.courses;
-    console.log(results);
-    console.log(results[0].title); 
+    console.log(results[0].title);
+    console.log(results[1].title);
+    console.log(results[2].title);
 
-        for (var i = 0; i < results.length; i++) {
+    
+    var searchField = "title";
+    var searchVal = "programming";
+    for (var i = 0; i < results.length; i++) {
+        if (results[i][searchField] == searchVal) {
+            array.push(results[i]);
+            console.log(array); 
+        }
+    }
 
-            var courseDiv = $("<div class='course'>");
-            var p = $("<p>");
+    // for (var i = 0; i < results.length; i++) {
 
-            courseDiv.append(p.text(results[i].title)); 
+    //     var courseDiv = $("<div class='course'>");
+    //     var courseInfo = $("<a target='_blank'><br>");
+    //     var p = $("<p>");
 
-            // courseDiv.append(p.text(results[i].title) + " " + p.text(results[i].homepage) + " " + p.text(results[i].summary) + " " + p.text(results[i].level) + " " + p.text(results[i].expected_duration) + " " + results[i].expected_duration_unit)
-            console.log(results[i].title)
-            console.log(results[i].hompage)
+    //     var title = results[i].title;
+    //     var link = results[i].homepage;
+    //     var summary = results[i].summary;
 
-            $(".panel-body").append(results[i].title)
+    //     courseInfo.attr({
+    //         "href": link,
+    //     });
 
-            $("#udacityCourses").prepend(courseDiv);
+    //     courseInfo
+    //         .append(p.text("Title: " + title));
 
-        };//for loop close
+
+    //     courseDiv.append(courseInfo);
+
+    //     $("#udacityCourses").prepend(courseDiv);
+
+    // };//for loop close
+
 });//ajax call end
+
+
 

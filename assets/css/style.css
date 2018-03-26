@@ -48,18 +48,24 @@ button {
 
 #navbar{
     font-family: 'Special Elite', cursive;
+<<<<<<< HEAD
     background-color: black; opacity: 0.8 !important;
 }
 
 #panobject{
     background-color: hsla(180, 4%, 15%, 0.8) !important;
+=======
+    background-color: hsla(180, 4%, 15%, 0.8) !important;
+    color: white !important;
+}
+
+.navbutton:link, navbutton:active, .navbutton:visited, .panel-title {
+    color: white !important; 
+>>>>>>> 7a40d59551c99ef73535519d22cfb7845d2287da
 }
 
 
 
-.list{
-    font: white !important;
-}
 h1{
     font-family: 'Fredericka the Great', cursive;
     font-size: 65px;
@@ -76,10 +82,25 @@ h1{
     font-size: 30px !important;
 
 }
+
+.panel, .panel-default, .panel-heading {
+    background-color: hsla(180, 4%, 15%, 0.8) !important;
+}
+
 .content-container {
     padding: 80px 40px;
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 900px;
+    
+}
+
+.course, .thing-wrap {
+    color: white; 
+}
+
+iframe {
+    float: left; 
+    margin: 20px; 
 }
 
 .youTubeImage {
@@ -92,7 +113,10 @@ h1{
     font-size: 20px; 
 }
 
-@media only screen and (min-width : 768px) {
+@media only screen and (max-width : 768px) {
+    .panel {
+        margin-top: 160px; 
+    }
 
 }
 
