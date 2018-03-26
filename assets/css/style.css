@@ -9,6 +9,10 @@
     padding-right: 150px !important;   
 }
 
+#eventbrite p{
+    color:white;  
+}
+
 .container{
     position: fixed; 
 /* Preserve aspet ratio */
@@ -48,20 +52,12 @@ button {
 
 #navbar{
     font-family: 'Special Elite', cursive;
-<<<<<<< HEAD
-    background-color: black; opacity: 0.8 !important;
-}
-
-#panobject{
-    background-color: hsla(180, 4%, 15%, 0.8) !important;
-=======
     background-color: hsla(180, 4%, 15%, 0.8) !important;
     color: white !important;
 }
 
 .navbutton:link, navbutton:active, .navbutton:visited, .panel-title {
     color: white !important; 
->>>>>>> 7a40d59551c99ef73535519d22cfb7845d2287da
 }
 
 
