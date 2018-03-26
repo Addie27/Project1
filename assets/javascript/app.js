@@ -19,7 +19,7 @@
  // AJAX Call for Eventbrite
  const eventbriteSettings = {
      url: 'https://www.eventbriteapi.com/v3/events/search/',
-     data: { token: 'NDTQNEDOWJ64E2QLDX2O', sort_by: 'date', 'location.address': 'Philadelphia', categories: "102,120", include_all_series_instances: "on", formats: "1,2,3,9,100" },
+     data: { token: 'NDTQNEDOWJ64E2QLDX2O', sort_by: 'date', 'location.address': 'Philadelphia', subcategory: "15005", include_all_series_instances: "on", formats: "1,2,3,9,100" },
      crossDomain: true,
      method: 'GET'
  }
@@ -34,21 +34,21 @@
      //  });
  })
 
- function display(category) {
+ function display(subcategory) {
      var display = $("#display");
      // Empty display div...
      display.empty();
      // ...for each item in the category...
-     for (i = 0; category[i]; i++) {
+     for (i = 0; subcategory[i]; i++) {
          // ...append the item to the display div.
          var newDiv = $("<div class=\"event\">");
          var p = $("<p>");
          newDiv
-             .append(p.text(category[i].name))
-             .append(p.text(category[i].description))
-             .append(p.text(category[i].location))
-             .append(p.text(category[i].date))
-             .append(p.text(category[i].url))
+             .append(p.text(subcategory[i].name))
+             .append(p.text(subcategory[i].description))
+             .append(p.text(subcategory[i].location))
+             .append(p.text(subcategory[i].date))
+             .append(p.text(subcategory[i].url))
      }
  }
 

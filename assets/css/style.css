@@ -48,9 +48,12 @@ button {
 
 #navbar{
     font-family: 'Special Elite', cursive;
-    background-color: black; opacity: 0.6 !important;
+    background-color: black; opacity: 0.8 !important;
 }
 
+#panobject{
+    background-color: hsla(180, 4%, 15%, 0.8) !important;
+}
 
 
 
