@@ -51,7 +51,7 @@
  })
 
  
- const eventbriteSettings = {
+ const eventbriteSettingsscience = {
     url: 'https://www.eventbriteapi.com/v3/events/search/',
     data: { token: 'NDTQNEDOWJ64E2QLDX2O', sort_by: 'date', 'location.address': 'Philadelphia', q: 'Science', include_all_series_instances: "on", formats: "1,2,3,9,100" },
     crossDomain: true,
@@ -59,7 +59,7 @@
 }
 
 
-$.ajax(eventbriteSettings).done(function(eventObject) {
+$.ajax(eventbriteSettingsscience).done(function(eventObject) {
     // All SF Area Events (Paginated by 50. Will only return first page.)
     eventbriteEvents = eventObject.events;
     // Create a new array of events whose venue is specifically in SF
