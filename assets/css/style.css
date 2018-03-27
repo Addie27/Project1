@@ -6,19 +6,14 @@
     min-width: 100%; 
     padding-bottom: 100px;
     margin-left: 50px;
+    margin-top: 160px; 
     padding-right: 150px !important;   
 }
 
-#eventbrite-content p, li, h1, h2, h3, h4, a, ul{
-    color:white;  
-    font-family: 'Special Elite', cursive;
-}
+
 
 .container{
-    position: fixed; 
-/* Preserve aspet ratio */
     align-content: center;
-    margin-top: 200px;
     width: 100%; 
     padding-right: 100px; 
     font-size: 15px !important;    
@@ -27,17 +22,19 @@
 button {
     font-family: 'Special Elite', cursive;
     color: black !important;
-    background-color: white !important; 
+    background-color: yellow !important; 
     border: 1px solid black !important;
+    font-size: 18px !important; 
 }
 
 .item {
     font-family: 'Special Elite', cursive;
 }
+
 .maincontainer{
     background-image: url("../images/back-img.jpg");
     opacity: 0.8;
-    font-family: 'Special Elite', cursive;
+    font-family: 'Source Sans Pro', sans-serif;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
@@ -46,13 +43,18 @@ button {
     
 }
 
+.desc { 
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.5; 
+}
+
 .subcontainer {
     margin-top: 250px;
     margin-left: 100px;
 }
 
 #navbar{
-    ffont-family: 'Special Elite', cursive;
+    font-family: 'Special Elite', cursive !important;
     background-color: hsla(180, 4%, 15%, 0.8) !important;
     color: white !important;
 }
@@ -65,7 +67,7 @@ button {
 
 h1{
     font-family: 'Fredericka the Great', cursive;
-    font-size: 65px;
+    font-size: 52px !important;
     color: white !important;
 }
 
@@ -77,7 +79,7 @@ h1{
 
 .panel-title {
     font-size: 30px !important;
-
+    font-family: 'Special Elite', cursive;
 }
 
 .panel, .panel-default, .panel-heading {
@@ -112,6 +114,13 @@ iframe {
 .youTubeTitle {
     padding: 5px;
     font-size: 20px; 
+}
+
+.event {
+    color: white;
+    margin-bottom: 10px !important; 
+    line-height: 2; 
+
 }
 
 @media only screen and (max-width : 768px) {
