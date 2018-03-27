@@ -9,6 +9,10 @@
     padding-right: 150px !important;   
 }
 
+#eventbrite p{
+    color:white;  
+}
+
 .container{
     position: fixed; 
 /* Preserve aspet ratio */
