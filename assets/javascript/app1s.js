@@ -1,4 +1,3 @@
-
 var queryURL = "https://www.udacity.com/public-api/v0/courses";
 var courseInfo;
 var title;
@@ -26,7 +25,7 @@ $.ajax({
         var link = results[i].homepage;
         var summary = results[i].summary;
 
-        if (results[i].title.includes("Software") || results[i].title.includes("Programming") || results[i].title.includes("App") || results[i].title.includes("Science")) {
+        if (results[i].title.includes("Science") || results[i].title.includes("Earth") || results[i].title.includes("Chemistry") || results[i].title.includes("Khan")) {
             var title = results[i].title;
             console.log(title)
 
@@ -47,6 +46,3 @@ $.ajax({
     };//for loop close
 
 });//ajax call end
-
-
-   
