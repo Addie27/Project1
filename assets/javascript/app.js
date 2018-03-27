@@ -19,7 +19,7 @@
  // AJAX Call for Eventbrite
  const eventbriteSettings = {
      url: 'https://www.eventbriteapi.com/v3/events/search/',
-     data: { token: 'NDTQNEDOWJ64E2QLDX2O', sort_by: 'date', 'location.address': 'Philadelphia', subcategories: '15005', include_all_series_instances: "on", formats: "1,2,3,9,100" },
+     data: { token: 'NDTQNEDOWJ64E2QLDX2O', sort_by: 'date', 'location.address': 'Philadelphia', q: 'Technology', include_all_series_instances: "on", formats: "1,2,3,9,100" },
      crossDomain: true,
      method: 'GET'
  }
@@ -51,6 +51,40 @@
  })
 
  
+ const eventbriteSettings = {
+    url: 'https://www.eventbriteapi.com/v3/events/search/',
+    data: { token: 'NDTQNEDOWJ64E2QLDX2O', sort_by: 'date', 'location.address': 'Philadelphia', q: 'Science', include_all_series_instances: "on", formats: "1,2,3,9,100" },
+    crossDomain: true,
+    method: 'GET'
+}
+
+
+$.ajax(eventbriteSettings).done(function(eventObject) {
+    // All SF Area Events (Paginated by 50. Will only return first page.)
+    eventbriteEvents = eventObject.events;
+    // Create a new array of events whose venue is specifically in SF
+    console.log(eventObject.events);
+    //  const phlEvents = events.filter(function(event) {
+    //      return event.venue.address.city === 'Philadelphia';
+    //  });
+
+    var display = $("#eventbrite");
+    var p = $("<p>");
+    // Empty display div...
+    // ...for each item in the category...
+    for (i = 0; eventbriteEvents; i++) {
+        // ...append the item to the display div.
+        
+        
+            $("#eventbrite-science").append(eventbriteEvents[i].name.html)
+            $("#eventbrite-science").append(eventbriteEvents[i].description.html)
+            $("#eventbrite-science").append(p.text(eventbriteEvents[i].location))
+            $("#eventbrite-science").append(p.text(eventbriteEvents[i].date))
+            $("#eventbrite-science").append(p.text(eventbriteEvents[i].url))
+   }
+})
+
+
      
 
  // On click events.
