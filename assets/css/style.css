@@ -9,8 +9,9 @@
     padding-right: 150px !important;   
 }
 
-#eventbrite p{
+#eventbrite-content p, li, h1, h2, h3, h4, a, ul{
     color:white;  
+    font-family: 'Quicksand', sans-serif;
 }
 
 .container{
