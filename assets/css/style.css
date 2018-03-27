@@ -11,7 +11,7 @@
 
 #eventbrite-content p, li, h1, h2, h3, h4, a, ul{
     color:white;  
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Special Elite', cursive;
 }
 
 .container{
@@ -25,19 +25,19 @@
 }
 
 button {
-    font-family: 'Special Elite', cursive !important;
+    font-family: 'Special Elite', cursive;
     color: black !important;
     background-color: white !important; 
     border: 1px solid black !important;
 }
 
 .item {
-    font-family: 'Special Elite', cursive !important;
+    font-family: 'Special Elite', cursive;
 }
 .maincontainer{
     background-image: url("../images/back-img.jpg");
     opacity: 0.8;
-    font-family: 'Special Elite', cursive !important;
+    font-family: 'Special Elite', cursive;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
@@ -52,7 +52,7 @@ button {
 }
 
 #navbar{
-    font-family: 'Special Elite', cursive;
+    ffont-family: 'Special Elite', cursive;
     background-color: hsla(180, 4%, 15%, 0.8) !important;
     color: white !important;
 }
