@@ -10,7 +10,9 @@
     padding-right: 150px !important;   
 }
 
-
+#eventbrite-engineering a{
+   word-break: keep-all;
+}
 
 .container{
     align-content: center;
@@ -99,6 +101,10 @@ h1{
 
 .course, .thing-wrap {
     color: white; 
+}
+
+li{
+    font-size: 20px;
 }
 
 iframe {
