@@ -1,13 +1,20 @@
+body {
+    background-image: url("../images/back-img.jpg");
+    font-family: 'Source Sans Pro', sans-serif;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
 #indexJumbotron {
-    background-color: hsla(180, 4%, 15%, 0.8);
+    background-color: rgba(0, 0, 0, 0.7);
     min-height: 100%;
     font-family: 'Poiret One', cursive;
     color: white;
-    min-width: 100%; 
-    padding-bottom: 100px;
-    margin-left: 50px;
-    margin-top: 160px; 
-    padding-right: 150px !important;   
+    margin: 10px; 
+    margin-top: 100px
+ 
 }
 
 #eventbrite-engineering a{
@@ -33,21 +40,12 @@ button {
     font-family: 'Special Elite', cursive;
 }
 
-.maincontainer{
-    background-image: url("../images/back-img.jpg");
-    opacity: 0.8;
-    font-family: 'Source Sans Pro', sans-serif;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
-    min-height: 100vh;
-    
-}
+
 
 .desc { 
     font-family: 'Source Sans Pro', sans-serif;
     line-height: 1.5; 
+    padding: 5px; 
 }
 
 .subcontainer {
@@ -129,10 +127,49 @@ iframe {
 
 }
 
-@media only screen and (max-width : 768px) {
+@media (max-width: 1060px) {
     .panel {
         margin-top: 160px; 
     }
+    #indexJumbotron { 
+        padding: 5px;
+        min-width: 90% !important; 
+        
+    }
+
+    .desc { 
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 30px !important; 
+        line-height: 1.5; 
+        position: relative;
+        left: 5%;
+        right: 5%; 
+        width: 90%; 
+    }
+    
+
+}
+
+@media (max-width: 380px) {
+    .panel {
+        margin-top: 160px; 
+    }
+    #indexJumbotron { 
+        padding: 5px;
+        min-width: 90% !important;
+        margin-top: 10px;  
+    }
+
+    .desc { 
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 15px !important; 
+        line-height: 1.5; 
+        position: relative;
+        left: 5%;
+        right: 5%; 
+        width: 90%; 
+    }
+    
 
 }
 
